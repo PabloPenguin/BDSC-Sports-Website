@@ -1,0 +1,333 @@
+#container { /*Container holding all my content together in one area*/
+	width: 80%; /*Means how large the specific div, which is 80% of the screen*/
+	margin-left: auto; /*Margin left is automatic so it centres on the page*/
+	margin-right: auto; /*Marin right is automatic so it centres on the page*/
+}
+
+@import 'https://fonts.googleapis.com/css?family=Hind+Madurai'; /*Imports this font from Google onto my stylesheet*/
+
+body, html { /*My body and html tags*/
+	background-color: #E6E7F8; /*Makes my background color this hexcode*/
+	margin: 0; /*To get rid of the spacing on my banner and footer*/
+	padding: 0; /*To get rid of the spacing on my banner and footer*/
+}
+
+img { /*All image tags*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.37); /*Adds a box shadow of top, left, bottom, right, then the color will be red green blue opacity*/
+}
+
+p { /*Paragraph tags*/
+	font-weight: normal; /*Makes the thickness of my text normal*/
+	font-family: calibri, Verdana, sans-serif; /*Makes the font calibri*/
+	font-size: 100%;
+}
+
+h1 { /*h1 tag*/
+	font-size: 250%; /*Makes the size of the font %250 bigger*/
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+h3 { /*h3 tag*/
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+nav { /*Left div*/
+	float: left; /*Moves this div towards the left*/
+	width: 17%;
+	background-color: #CDE9E3;
+	margin-top: 2%; /*Margin pushes everything outside the div, this one is margin top so it pushes up by 2%*/
+	padding: 1%; /*Pushes the space inside by 1%*/
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.37);
+}
+
+nav ul { /*inside navigation tag the unordered list*/
+	padding: 0;
+	margin: 0;
+	list-style-type: none; /*No bullet points*/
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+nav ul li { /*inside navigation tag inside the unordered list tag the list*/
+	margin-bottom: 3%;
+	padding: 16px 0 16px 0; /*Makes space inside the box of top, left, bottom, right*/
+	text-align: center; /*Makes the text along the middle*/
+}
+
+nav ul li a { /*Inside the nav inside the unordered list inside the list inside the anchor tag*/
+	color: #257462; /*Color of the text*/
+	text-decoration: none; /*Removes the underline*/
+	display: block; /*Makes the boxes vertically*/
+	padding: 10%; /*Pushes 10% of space in the boxes in every direction*/
+	background-color: #EAF6F2;
+}
+
+/*Below is css for the dropdown of the navigation, but the same applies from above so I won't repeat most comments*/
+
+nav ul ul {
+	display: none; /*Makes the dropdowns not visible until hover*/
+	text-align: center;
+	min-width: 130px; /*The minimum width it can be resized to*/
+	margin-bottom: 3%;
+}
+
+nav ul ul li {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -10%;
+	
+}
+
+nav ul li:hover ul{ /*Makes the button I hover over with the scroll appear again*/
+	display: block;
+	margin-bottom: -3%;
+}
+
+/*end of dropdown navigation*/
+
+li a.active { /*Class tag makes it a certain colour for the page you're on*/
+	background-color: #7B8AAE;
+	color: #000000;
+}
+
+li a:hover:not(.active) { /*When I hover over the anchor tags (my navigation) except for the active class*/
+    background-color: #7B8AAE;
+	color: white;
+	margin-bottom: 1%;
+	transition: 0.5s; /*Delay of action by 0.5s*/
+}
+
+#right {
+	width: 77%;
+	float: right; /*Pushes the div towards the right*/
+	background-color: #CDE9E3;
+	padding: 1%;
+	margin-top: 2%;
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.37);
+}
+
+.title {
+	margin-left: 3%;
+	margin-bottom: 10%;
+	background-color: #EAF6F2;
+	width: 60%;
+}
+
+.title h1 {
+	padding: 3%;
+}
+
+.paragraphstyle1 {
+	margin-left: 3%;
+	background-color: #E6E9F5;
+	padding: 1%;
+	width: 50%;
+	float: left;
+}
+
+.imagestyle1 {
+	margin-right: 5%;
+}
+
+.imagestyle1 img {
+	float: right;
+	width: 32%;
+	border: 2px solid; /*Makes my border 2px thick with a solid line*/
+	color: #ffffff;
+	border-radius: 23px; /*Makes my rounded corner 23px*/
+	transform: rotate(3deg); /*Makes the image rotate by 3 degrees*/
+}
+
+.longparagraph {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1%;
+	width: 90%;
+	background-color: #E6E9F5;
+}
+
+.tableparagraph {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1%;
+	width: 90%;
+	background-color: #E6E9F5;
+}
+
+.longparagraph li {
+	font-weight: normal; 
+	font-family: calibri; 
+	margin: 1%;
+}
+
+.tableparagraph h3 {
+	text-align: center;
+}
+
+.imagestyle2 {
+	margin-left: 3%;
+}
+
+.imagestyle2 img {
+	float: left; 
+	width: 34%;
+	border: 2px solid;
+	color: #ffffff;
+	border-radius: 23px;
+	transform: rotate(-3deg); /*Rotates my image by -3 degrees*/
+}
+
+.paragraphstyle2 {
+	float: right;
+	width: 50%;
+	padding: 1%;
+	background-color: #E6E9F5;
+	margin-right: 3%;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Hind Madurai', sans-serif;
+}
+
+td { /*Table data*/
+	border: 2px solid #000000; /*2px thick border which is solid with the hexcode of black*/
+	text-align: center;
+	
+}
+
+hr { /*The line splitting my content*/
+	border: 0; /*Removes the defaults on the left and right of HR*/
+	border-top: 1px solid #EAF6F2; /*Makes the top border white*/
+	border-bottom: 1px solid #EAF6F2; /*Makes the bottom border white*/
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/*Gallery setup below*/
+
+.gallery {
+	margin: 1%;
+	border: 3px solid RGB(37,116,98);
+	display: inline-block; /*Displays the images of my gallery horizontally*/
+	width: 29%;
+	opacity: 0.5; /*Makes the image half visible half transparent to the element behind it*/
+}
+
+.gallery img {
+	box-shadow: 1px 1px 20px #000000; /*Adds a shadow to only the image for dramatic effect*/
+}
+
+.gallery:hover { /*When I hover over my gallery*/
+	opacity: 1; /*Becomes fully apparent*/
+	transition: 1s; /*Takes one second to become active*/
+}
+
+.caption {
+	padding: 15px;
+	text-align: center;
+	font-size: 80%;
+}
+
+/*End of Gallery setup*/
+
+footer {
+	margin-top: 5%;
+	padding: 2%;
+	background-color: #D1D3D4;
+	text-align: center;
+	font-size: 80%;
+}
+
+.toptable {
+	background-color: rgb(35,104,99); /*Difference between RGB and RGBA is RGB is just red green blue with no opacity*/
+	font-style: oblique; /*Makes my font skewed to an angle*/
+	font-size: 120%;
+	
+}
+
+tr { /*Table row*/
+	background-color: rgba(35,104,99,0.4);
+}
+
+@media only screen and (max-width: 991px){ /*When my window becomes 991 pixels or below, let the css below occur*/
+	.title {
+		width: 95%;
+		font-size: 80%;
+		text-align: center;
+	}
+	
+	.imagestyle1 img {
+		width: 70%;
+		float: none;
+		margin-top: 5%;
+	}
+
+	.paragraphstyle1 {
+		width: 90%;
+	}
+	
+	.paragraphstyle2 {
+		width: 90%;
+	}
+	
+	.imagestyle2, .imagestyle1 {
+		min-width: 148px;
+		text-align: center;
+		margin-bottom: 10%;
+	}
+	
+	.imagestyle2 img {
+		width: 70%;
+		float: none;
+		margin-top: 5%;
+	}
+
+	.tableparagraph {
+		height: 90%;
+		width: 90%;
+		overflow: auto;
+	}
+	
+	#right {
+		width: 100%;
+		padding: 0%;
+	}
+	
+	nav {
+		width: 100%;
+		padding: 0%;
+	}
+	
+	nav {
+		text-align: center;
+		font-size: 100%;
+	}
+	
+	nav ul li {
+		display: block;
+		margin: 1%;
+		padding: 0;	
+	}
+	
+	nav ul li a {
+		padding: 3%;
+		width: 90%;
+		display: inline-block;
+		margin: 0;
+	}
+	
+	nav ul ul li {
+		margin-bottom: 4%;
+	}
+	
+	.gallery {
+		min-width: 176px; /*The minimum width the gallery class can go no matter what is 100 pixels*/
+	}
+}
